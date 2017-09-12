@@ -9,33 +9,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Site-Template</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="flexslider/flexslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="flexslider/jquery.flexslider.js"></script>
+  <script src="functions.js"></script>
   <script>
     $( window ).scroll(function() {
-  $( "header" ).css( "background-color", "#000" ).fadeOut( "slow" );
+     var t = $('#Body');
+  $( "header" ).css( "padding", "0" );
+  $("div.layer").css( "display", "block" );
+  if(t.scrollTop() == 0)
+        {
+  $( "header" ).css( "padding", "20px 0" );
+  $("div.layer").css( "display", "none" )
+        }
+
 });
   </script>
 </head>
 <body id="Body" itemscope="" itemtype="http://schema.org/WebPage">
   <header>
-    <nav class="wrap" >
+    <nav class="wrap" itemscope itemtype="https://schema.org/SiteNavigationElement" >
     <figure class="w20 fl">
           <img src="Olympic-rings.png" itemtype="image" itemprop="logo" alt="olympic logo" class="fl" />
           </figure>
         <ul class="w80 fl">
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">SPONSORS</a></li>
-          <li><a href="#">SHOP</a></li>
+          <li><a href="#" itemprop="url">NEWS</a></li>
+          <li><a href="#" itemprop="url">GALLERY</a></li>
+          <li><a href="#" itemprop="url">SPONSORS</a></li>
+          <li><a href="#" itemprop="url">SHOP</a></li>
         </ul>
-    </nav>
+    </nav><div class="layer"></div>
   </header>
   <main>
     <section id="background">
-      <img src="olympicbg.jpg" itemtype="image" itemprop="backgorund" alt="olympic background"/>
+      <div class="flexslider">
+      <div class="text">
+        <h1>Big essential text</h1>
+        <h2>Smaller less essential text</h2>
+        <p>Information connected to the above headings</p>
+      </div>
+        <ul class="slides">
+          <li>
+            <img src="olympicbg.jpg" alt="olympic stadium" />
+          </li>
+          <li>
+            <img src="olympic-berlin.jpg" alt="olympic stadium berlin"  />
+          </li>
+          <li>
+            <img src="olympic-portland.jpg" alt="olympic stadium portland"  />
+          </li>
+        </ul>
+      </div>
     </section>
+    <article>
+    <div class="wrap">
+    <h2 class="w20 fl">10 WAYS TO IMPROVE YOUR SKILLS</h2>
+    <h3 class="w75 fl">Continue reading this article and you will find the key factors to buiding your otherwise self-loathed persona and eventually start functioning like a normal human being for a change!</h3>
+    <p class="w75 fl">Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.</p>
+   </div>
+    </article>
   </main>
 </body>
 </html>

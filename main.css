@@ -7,8 +7,14 @@
 .w33 {
   width: 33.3333333333%; }
 
+.w66 {
+  width: 66.6666666667%; }
+
 .w50 {
   width: 50%; }
+
+.w75 {
+  width: 75%; }
 
 .w80 {
   width: 80%; }
@@ -27,12 +33,30 @@
   max-width: 1140px;
   margin: 0 auto; }
 
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  display: none;
+  animation: fadein 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 body {
+  font-family: "Sarpanch", sans-serif;
   margin: 0;
   padding: 0;
   outline: 0;
   text-align: center;
-  color: #888;
+  color: #fff;
   background-color: #fff; }
   body a {
     color: #fff;
@@ -42,7 +66,9 @@ body {
     overflow: hidden;
     position: fixed;
     width: 100%;
-    padding: 20px 0; }
+    padding: 20px 0;
+    transition: padding 1s;
+    z-index: 3; }
 
 nav {
   overflow: hidden;
@@ -63,13 +89,42 @@ nav {
     nav ul li {
       float: right;
       display: block;
-      margin: 0 20px; }
+      margin: 0 20px;
+      position: relative; }
 
 #background img {
   width: 100%;
   height: 100%;
   text-align: center;
-  max-height: 950px;
+  max-height: 100vh;
   overflow: hidden; }
+#background .flex-control-nav {
+  display: none; }
+#background .text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 1;
+  text-align: left;
+  text-shadow: 0 0 1px #000; }
+  #background .text h1 {
+    font-size: 72px;
+    text-transform: uppercase; }
+  #background .text h2 {
+    font-size: 48px; }
+  #background .text p {
+    font-size: 22px; }
+
+article {
+  background-color: #f3f3f3;
+  color: #000;
+  overflow: hidden;
+  padding: 40px 0; }
+  article h2 {
+    font-size: 36px;
+    text-align: left; }
+  article h3, article p {
+    margin-left: 5%;
+    text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
