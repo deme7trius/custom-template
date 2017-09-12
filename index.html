@@ -2,6 +2,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+ <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Site-Template</title>
@@ -9,14 +12,19 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $( window ).scroll(function() {
+  $( "header" ).css( "background-color", "#000" ).fadeOut( "slow" );
+});
+  </script>
 </head>
-<body class="wrap" id="Body" itemscope="" itemtype="http://schema.org/WebPage">
+<body id="Body" itemscope="" itemtype="http://schema.org/WebPage">
   <header>
-    <nav>
-    <figure itemtype="image" itemprop="logo">
-          <img src="logo.png" alt="olympic logo"/>
+    <nav class="wrap" >
+    <figure class="w20 fl">
+          <img src="Olympic-rings.png" itemtype="image" itemprop="logo" alt="olympic logo" class="fl" />
           </figure>
-        <ul>
+        <ul class="w80 fl">
           <li><a href="#">NEWS</a></li>
           <li><a href="#">GALLERY</a></li>
           <li><a href="#">SPONSORS</a></li>
@@ -24,5 +32,10 @@
         </ul>
     </nav>
   </header>
+  <main>
+    <section id="background">
+      <img src="olympicbg.jpg" itemtype="image" itemprop="backgorund" alt="olympic background"/>
+    </section>
+  </main>
 </body>
 </html>
