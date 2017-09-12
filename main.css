@@ -6,17 +6,32 @@ body {
   color: #888;
   background-color: #fff; }
   body a {
-    color: #fff;
+    color: #000;
     text-decoration: none; }
+  body header {
+    overflow: hidden; }
 
-ul {
-  background-color: gray;
-  width: 100%;
-  display: block;
-  overflow: hidden; }
-  ul li {
+nav {
+  overflow: hidden;
+  height: 100px; }
+  nav figure {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    float: left; }
+    nav figure img {
+      max-height: 100px; }
+  nav ul {
+    line-height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 80%;
     float: left;
     display: block;
-    margin: 0 20px; }
+    overflow: hidden; }
+    nav ul li {
+      float: right;
+      display: block;
+      margin: 0 20px; }
 
 /*# sourceMappingURL=main.css.map */
