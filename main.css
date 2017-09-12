@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-align: center;
+  color: #888;
+  background-color: #fff; }
+  body a {
+    color: #fff;
+    text-decoration: none; }
+
+ul {
+  background-color: gray;
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  ul li {
+    float: left;
+    display: block;
+    margin: 0 20px; }
+
+/*# sourceMappingURL=main.css.map */
