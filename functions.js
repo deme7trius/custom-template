@@ -12,5 +12,17 @@ $(document).ready(function () {
             directionNav: true
         });
       //end function
-      $('div.phoneimage').css('transform','translateY('+($(window).scrollTop()*.4)+'px)');
+      $(window).scroll(function () {
+    $('#phoneimage').each(function () {
+        var imagePos = $(this).offset().top;
+        var imageHeight = $(this).height();
+        var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+           $(this).css("background-attachment", "unset"); 
+        } else {
+            $(this).css("background-attachment", "fixed");
+        }
+    });
+});
 });

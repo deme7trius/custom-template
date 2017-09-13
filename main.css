@@ -48,6 +48,8 @@
   animation: fadein 0.5s;
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s; }
+  .layer .baf {
+    background-attachment: fixed; }
 
 @keyframes fadein {
   from {
@@ -191,9 +193,9 @@ article {
   #fixed-item h2, #fixed-item h3, #fixed-item p {
     margin: 20px 0; }
   #fixed-item .phoneimage {
-    height: 430px;
+    height: 530px;
     background-size: 254px;
-    background-position: 33% 100%;
+    background-position: 29% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed; }
 
