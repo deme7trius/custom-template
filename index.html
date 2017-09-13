@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="flexslider/flexslider.css">
   <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="flexslider/jquery.flexslider.js"></script>
@@ -19,39 +20,39 @@
   <script>
     $( window ).scroll(function() {
      var t = $('#Body');
-  $( "header" ).css( "padding", "0" );
-  $("div.layer").css( "display", "block" );
-  if(t.scrollTop() == 0)
-        {
-  $( "header" ).css( "padding", "20px 0" );
-  $("div.layer").css( "display", "none" )
-        }
+     $( "header" ).css( "padding", "0" );
+     $("div.layer").css( "display", "block" );
+     if(t.scrollTop() == 0)
+     {
+      $( "header" ).css( "padding", "20px 0" );
+      $("div.layer").css( "display", "none" )
+    }
 
-});
-  </script>
+  });
+</script>
 </head>
 <body id="Body" itemscope="" itemtype="http://schema.org/WebPage">
   <header>
     <nav class="wrap" itemscope itemtype="https://schema.org/SiteNavigationElement" >
-    <figure class="w20 fl">
-          <img src="Olympic-rings.png" itemtype="image" itemprop="logo" alt="olympic logo" class="fl" />
-          </figure>
-        <ul class="w80 fl">
-          <li><a href="#" itemprop="url">NEWS</a></li>
-          <li><a href="#" itemprop="url">GALLERY</a></li>
-          <li><a href="#" itemprop="url">SPONSORS</a></li>
-          <li><a href="#" itemprop="url">SHOP</a></li>
-        </ul>
+      <figure class="w20 fl">
+        <img src="Olympic-rings.png" itemtype="image" itemprop="logo" alt="olympic logo" class="fl" />
+      </figure>
+      <ul class="w80 fl">
+        <li><a href="#" itemprop="url">NEWS</a></li>
+        <li><a href="#" itemprop="url">GALLERY</a></li>
+        <li><a href="#" itemprop="url">SPONSORS</a></li>
+        <li><a href="#" itemprop="url">SHOP</a></li>
+      </ul>
     </nav><div class="layer"></div>
   </header>
   <main>
     <section id="background">
       <div class="flexslider">
-      <div class="text">
-        <h1>Big essential text</h1>
-        <h2>Smaller less essential text</h2>
-        <p>Information connected to the above headings</p>
-      </div>
+        <div class="text">
+          <h1>Big essential text</h1>
+          <h2>Smaller less essential text</h2>
+          <p>Information connected to the above headings</p>
+        </div>
         <ul class="slides">
           <li>
             <img src="olympicbg.jpg" alt="olympic stadium" />
@@ -66,12 +67,85 @@
       </div>
     </section>
     <article> <!-- add some semantics -->
-    <div class="wrap">
-    <h2 class="w20 fl">10 WAYS TO IMPROVE YOUR SKILLS</h2>
-    <h3 class="w75 fl">Continue reading this article and you will find the key factors to buiding your otherwise self-loathed persona and eventually start functioning like a normal human being for a change!</h3>
-    <p class="w75 fl">Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.</p>
-   </div>
+      <div class="wrap">
+        <h2 class="w20 fl">10 WAYS TO IMPROVE YOUR SKILLS</h2>
+        <h3 class="w75 fl">Continue reading this article and you will find the key factors to buiding your otherwise self-loathed persona and eventually start functioning like a normal human being for a change!</h3>
+        <p class="w50 fl">Text that I have to type myself because the lack of ideas running through my head about random lorem ipsum dolor sin amet texts.Text that I have to type myself because the lack of ideas running through my head about </p>
+      </div>
     </article>
+    <section id="triple">
+      <div class="wrap">
+        <div class="w30 fl">
+          <span class="icon"><i class="fa fa-snowflake-o" aria-hidden="true"></i></span>
+          <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+          <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          <small>Some text that is bearly visible</small>
+        </div>
+        <div class="w30 fl">
+          <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+          <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+          <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          <small>Some text that is bearly visible</small>
+        </div>
+        <div class="w30 fl">
+          <span class="icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>
+          <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+          <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          <small>Some text that is bearly visible</small>
+        </div>
+      </div>
+    </section>
+    <section id="item-transition">
+      <div class="wrap">
+        <div class="w50 fl">
+          <h2>Some text</h2>
+          <h3>Some longer and bigger text</h3>
+          <small>Some insignificant text which indicates auxiliary information</small>
+          <div class="case"> 
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          </div>
+          <div class="case"> 
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          </div>
+          <div class="case"> 
+            <h2 itemprop="name">Section heading</h2> <!-- caret-right -->
+            <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet</p>
+          </div>
+        </div>
+        <div class="w50 fl item">
+          <img src="b_phone.png" alt="">
+          <div id="container">
+            <div class="photobanner">
+              <img class="first" src="image-1.jpg" alt="phone" />
+              <img src="image-2.jpg" alt="" />
+              <img src="image-3.jpg" alt="" />
+              <img src="image-4.jpg" alt="" />
+              <img src="image-5.jpg" alt="" />
+              <img src="image-6.jpg" alt="" />
+              <img src="image-1.jpg" alt="" />
+              <img src="image-2.jpg" alt="" />
+              <img src="image-3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fixed-item">
+      <div class="wrap">
+        <div class="w50 fl">
+        <div class="phoneimage" style="background-image: url(b_phone.png);"></div>
+        </div>
+        <div class="w50 fl">
+          <h2>Heading text</h2>
+          <h3>Bigger heading text indicating importance</h3>
+          <p>Paragraph item regarding the information in the headings</p>
+          <small>Some small, less significant text</small>
+        </div>
+      </div>
+    </section>
+    <div class="empty" style="height: 1000px;"></div>
   </main>
 </body>
 </html>

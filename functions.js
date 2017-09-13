@@ -12,4 +12,5 @@ $(document).ready(function () {
             directionNav: true
         });
       //end function
+      $('div.phoneimage').css('transform','translateY('+($(window).scrollTop()*.4)+'px)');
 });
