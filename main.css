@@ -198,6 +198,30 @@ article {
     background-position: 29% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed; }
+  #fixed-item #text {
+    margin: 60px 0;
+    text-align: left; }
+
+aside {
+  color: #000;
+  padding: 100px 0;
+  background-color: #f3f3f3; }
+  aside .glayer {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto; }
+  aside p {
+    line-height: 3; }
+
+footer {
+  color: #000;
+  height: 60px;
+  line-height: 60px; }
+  footer a {
+    color: #000;
+    transition: 1s ease; }
+    footer a:hover {
+      color: #adadad; }
 
 .first {
   -webkit-animation: bannermove 30s linear infinite;

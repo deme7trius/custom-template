@@ -1,8 +1,19 @@
 $(document).ready(function () {
 
+    $( window ).scroll(function() {
+     var t = $('#Body');
+     $( "header" ).css( "padding", "0" );
+     $("div.layer").css( "display", "block" );
+     if(t.scrollTop() == 0)
+     {
+      $( "header" ).css( "padding", "20px 0" );
+      $("div.layer").css( "display", "none" )
+    }
+
+  });
 //flexslider
 
-        $('.flexslider').flexslider({
+        $('#main').flexslider({
             animation: "slide",
             slideshowSpeed: 10000,
             animationSpeed: 4000,
@@ -11,6 +22,9 @@ $(document).ready(function () {
             animationLoop: true,
             directionNav: true
         });
+      $('#secondary').flexslider({
+      	animation: "slider"
+      });
       //end function
       $(window).scroll(function () {
     $('#phoneimage').each(function () {

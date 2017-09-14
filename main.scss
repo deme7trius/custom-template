@@ -127,7 +127,30 @@ $font:'Sarpanch', sans-serif;
 		#fixed-item{color:$grayish2;
 		h2,h3,p{margin: 20px 0;}
 		.phoneimage{height: 530px;background-size: 254px;background-position: 29% 100%;background-repeat: no-repeat;background-attachment:fixed;}
+		#text{margin: 60px 0;text-align: left;}
 		}
+			
+		aside{color: $black;padding: 100px 0;background-color: #f3f3f3;
+			.glayer{width: 100%;max-width: 768px;margin: 0 auto;}
+		p{line-height: 3;}}
+		footer{color: $black;height: 60px;line-height: 60px;
+			a{color: $black;transition: 1s ease;
+			&:hover{color:$grayish2;}
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
